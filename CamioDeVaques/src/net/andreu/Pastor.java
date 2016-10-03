@@ -23,9 +23,9 @@ public class Pastor {
 	private int calculaResultat(Camio camio, List<Vaca> subList) {
 		
 		for(Vaca vaca: subList){
-			camio.posarVaca(vaca);
-			if(camio.posarVaca(vaca)==false){
-				break;
+			boolean posada = camio.posarVaca(vaca);
+	        if(!posada){
+	           break;
 			}
 		}
 		
